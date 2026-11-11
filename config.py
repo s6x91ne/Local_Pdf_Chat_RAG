@@ -46,14 +46,14 @@ MAGICK_API_URL = os.getenv(
 # SiliconFlow/Magick API 格式: 使用对应平台提供的模型 ID
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 OLLAMA_MODEL_NAME = os.getenv("OLLAMA_MODEL_NAME", "deepseek-r1:8b")
-SILICONFLOW_MODEL_NAME = os.getenv("SILICONFLOW_MODEL_NAME", "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B")
+SILICONFLOW_MODEL_NAME = os.getenv("SILICONFLOW_MODEL_NAME", "deepseek-ai/DeepSeek-V4-Flash")
 MAGICK_MODEL_NAME = os.getenv("MAGICK_MODEL_NAME", "gpt-4o-mini")
 RERANK_METHOD = os.getenv("RERANK_METHOD", "cross_encoder")
 
 MODEL_CHOICES = ["ollama", "siliconflow", "magick"]
 MODEL_DISPLAY_NAMES = {
     "ollama": "本地 Ollama 模型",
-    "siliconflow": "Cloud DeepSeek-R1 模型",
+    "siliconflow": "deepseek-ai/DeepSeek-V4-Flash 模型",
     "magick": "Magick API 模型"
 }
 
