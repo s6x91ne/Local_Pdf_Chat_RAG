@@ -37,7 +37,13 @@ RAG 核心处理模块
     - chunk_size：每个片段最大字符数
     - chunk_overlap：相邻片段重叠字符数（避免关键信息被切断）
     - separators：优先按照什么分隔符切分
+    
 3. embeddings.py
+
+文档嵌入，将文本嵌入为embedding向量
+（面试应该不会问，简单记录下，无论是sentence_transformers加载模型，还是langchain_huggingface加载模型，都把单文本和多文本分开了的，实际
+全部使用多文本，也是一样的）
+
 4. vector_store.py
 5. bm25_index.py
 """
